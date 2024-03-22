@@ -9704,13 +9704,25 @@ h6,
   list-style-type: none;
 }
 
-.img-team {
-    height: 350px; /* Altura fija para las imágenes */
-    object-fit: cover; /* Para asegurar que la imagen cubra el contenedor */
-    border-radius: 50px; /* Bordado redondeado para el cuadro */
+.team {
+    position: relative;
+    border-radius: 25px; /* Hacer la imagen redonda */
 }
 
-.team {
-    border-radius: 50px; /* Bordado redondeado para el cuadro */
-    overflow: hidden; /* Para ocultar cualquier contenido que se desborde del cuadro */
+/* Overlay style for hover effect */
+.overlay {
+    position: absolute;
+    top
+
+.team:hover .overlay {
+    
+    background-color: rgba(255, 165, 0, 0.5); /* Cambiar el color naranja y la opacidad al pasar el mouse */
+}
+
+.fill-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Hace que la imagen rellene el espacio manteniendo su relación de aspecto */
+    margin: 0; /* Elimina el margen */
+    padding: 0; /* Elimina el relleno */
 }
