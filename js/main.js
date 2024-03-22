@@ -110,3 +110,11 @@
     
 })(jQuery);
 
+// Función para mostrar el cuadro de diálogo al hacer clic en el botón "Book Now"
+function showBookingNotification() {
+    // Mensaje de notificación
+    var message = "Para agendar una reunión, por favor enviar un correo electrónico a info.riskalytics@gmail.com o un mensaje de WhatsApp al +54 11 2403 8561 y lo atenderán a la brevedad.";
+
+    // Muestra el cuadro de diálogo con el mensaje
+    alert(message);
+}
