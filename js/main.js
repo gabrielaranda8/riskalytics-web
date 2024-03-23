@@ -127,3 +127,29 @@ function showBookingNotificationEng() {
     // Muestra el cuadro de diálogo con el mensaje
     alert(message);
 }
+
+function showOverlay(img) {
+    var overlay = document.createElement('div');
+    overlay.className = 'overlay';
+    
+    var overlayContent = document.createElement('div');
+    overlayContent.className = 'overlay-content';
+    
+    var image = document.createElement('img');
+    image.className = 'overlay-image';
+    image.src = img.src;
+    
+    overlayContent.appendChild(image);
+    
+    // Agrega información adicional sobre el miembro del equipo aquí
+    var text = document.createTextNode("Aquí va la información adicional sobre el miembro del equipo.");
+    overlayContent.appendChild(text);
+    
+    overlay.appendChild(overlayContent);
+    
+    document.body.appendChild(overlay);
+    
+    overlay.addEventListener('click', function() {
+        overlay.parentNode.removeChild(overlay);
+    });
+}
