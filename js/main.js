@@ -118,3 +118,12 @@ function showBookingNotification() {
     // Muestra el cuadro de diálogo con el mensaje
     alert(message);
 }
+
+// Función para mostrar el cuadro de diálogo al hacer clic en el botón "Book Now"
+function showBookingNotificationEng() {
+    // Mensaje de notificación
+    var message = "To schedule a meeting, please send an email to info.riskalytics@gmail.com or a WhatsApp message to +54 11 2403 8561 and you will be attended as soon as possible.";
+
+    // Muestra el cuadro de diálogo con el mensaje
+    alert(message);
+}
